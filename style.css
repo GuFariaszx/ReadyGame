@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    --azulescuro-Ready: #021859 ;
+    --azulclaro-Ready : #3999CF ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    
+}
+
+header {
+    height: 943px;
+    background-color: var(--azulescuro-Ready);
+    background-image: url(img/banner.png);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 192px;
+}
+
+header div.banner {
+    width: 1000px;
+}
