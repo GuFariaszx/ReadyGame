@@ -8,6 +8,7 @@
     --azulclaro-Ready : #3999CF ;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -25,25 +26,166 @@ html {
 }
 
 .banner {
-    height: 100vh;
-    background-image: url(img/banner.png);
-    background-repeat: no-repeat;
-    
+    background-color: var(--azulescuro-Ready);
 }
 
+
 header {
-    height: 943px;
-    background-color: var(--azulescuro-Ready);
-    background-image: url(img/banner.png);
+    height: 400px;  
+}
+
+header div.container-grid {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header img {
+header .container-grid .favicon {
     width: 192px;
+    margin-left: -50px;
+    margin-top: 0px;
+    
+}
+
+.Login {
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white ;
+    font-family: "Space Grotesk";
+    font-size: 26px;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+    color: var(--azulclaro-Ready);
 }
 
 header div.banner {
     width: 1000px;
 }
+
+.conteudo-banner {
+    height: 400px;
+    display: flex;
+}
+
+.conteudo-banner p {
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    color: white;
+    text-decoration: underline transparent;
+    padding-top: 70px;
+}
+
+#Sobre {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 25%;
+}
+
+#Sobre .title {
+    color: var(--azulescuro-Ready);
+    margin-bottom: 50px;
+    font-family: "Space Grotesk";
+    font-size: 26px;
+}
+
+#Sobre p {
+    font-family: 'Padauk';
+    font-size: 20px;
+
+    text-align: left;
+}
+
+#Cases {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#Cases h2 {
+    margin-bottom: 100px;
+    color: var(--azulescuro-Ready);
+    font-family: "Space Grotesk";
+    font-size: 26px;
+}
+
+.container-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    height: 310px;
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--azulclaro-Ready);
+    border-radius: 15px;
+    
+}
+
+.card img {
+    height: 70%;
+    width: 75%;
+    margin-top: 20px;
+    opacity: 90%;
+}
+
+.card button {
+    
+    width: 75%;
+    height: 40px;
+    
+    background-color: var(--azulescuro-Ready) ;
+    
+    border: none;
+    border-radius: 8px;
+    
+    color: white;
+    
+    font-family: 'Padauk';
+    font-size: 26px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    
+    transition: background-color 500ms;
+
+    margin-bottom: 20px;
+}
+
+.card button:hover {
+        background-color: #02217e;
+}
+
+
+
+
+
+
+
