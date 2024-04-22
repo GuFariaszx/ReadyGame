@@ -27,6 +27,7 @@ html {
 
 .banner {
     background-color: var(--azulescuro-Ready);
+    background-image: url(img/Comunity.png);
 }
 
 
@@ -40,6 +41,7 @@ header div.container-grid {
     justify-content: space-between;
     align-items: center;
 }
+
 
 header .container-grid .favicon {
     width: 192px;
@@ -180,12 +182,98 @@ header div.banner {
 }
 
 .card button:hover {
-        background-color: #02217e;
+    background-color: #02217e;
+}
+
+#portfólio {
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+    margin-bottom: 120px;
+}
+
+.filtro {
+    height: 100%;
+    width: 88%;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(2,19,67,1) 0%, rgba(6,35,119,1) 100%), url(img/canoa.png) 30%;
+    display: flex; 
+    justify-content: center;
+    border-radius: 100px;
+   
+}
+
+#portfólio img {
+    width: 20%;
+    height: 50%;
+    margin-top: 100px;
+    
 }
 
 
+#portfólio a {
+    width: fit-content;
+    font-family: "Space Grotesk";
+    font-size: 36px;
+    text-decoration: underline transparent;
+    color: white;
+    
+}
 
+.filtro .container-grid {
 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 
+}
+
+.filtro .texto{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro .texto a:first-child {
+
+    margin-top: 170px;
+
+}
+
+#formulario {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#formulario form {
+    width: 40%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background-color: #021859;
+    color: white;
+    font-family: "Space Grotesk";
+}
+
+#formulario form label {
+    margin-bottom: 15px;
+    font-size: 17px;
+    
+}
 
 
