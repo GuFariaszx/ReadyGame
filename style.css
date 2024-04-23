@@ -194,18 +194,18 @@ header div.banner {
    
     
 
-    margin-bottom: 120px;
+    margin-bottom: 200px;
 }
 
 .filtro {
     height: 100%;
     width: 88%;
 
-    background: rgb(2,0,36);
-    background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(2,19,67,1) 0%, rgba(6,35,119,1) 100%), url(img/canoa.png) 30%;
+    background: var(--azulescuro-Ready);
     display: flex; 
     justify-content: center;
     border-radius: 100px;
+    background-image: url(img/canoa.png);
    
 }
 
@@ -251,6 +251,7 @@ header div.banner {
 
     padding-bottom: 100px;
     margin-bottom: 100px;
+
 }
 
 #formulario form {
@@ -265,15 +266,200 @@ header div.banner {
 
     border-radius: 20px;
 
-    background-color: #021859;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.452) ;
+    
+    background-color:white;
     color: white;
     font-family: "Space Grotesk";
+    
+}
+
+#formulario h2 {
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    color: var(--azulescuro-Ready);
+    margin-bottom: 35px;
 }
 
 #formulario form label {
-    margin-bottom: 15px;
-    font-size: 17px;
-    
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: black;
+
 }
+
+.campo {
+    width: 80%;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo input {
+    height: 40px;
+
+    color: white;
+    background-color:#3998cf8e;
+
+    border-radius: 10px;
+
+    text-indent: 10px;
+
+    font-family: "Padauk";
+    font-size: 20px;
+}
+
+.campo-textarea {
+    width: 80%;
+
+    margin-bottom: 30px;
+    border: 20px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.campo-textarea textarea {
+    color: white;
+    background-color: #3998cf8e;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    font-family: "Padauk";
+    font-size: 20px;
+    resize: none;
+    outline: none;
+}
+
+#campo-descricao {
+
+    border-width: 2px;
+    border-color: black;
+
+}
+
+.campo input:focus, .campo-textarea textarea:focus {
+    outline: 2px solid var(--azulclaro-Ready);
+}
+
+form button{
+    height: 40px;
+    width: 20%;
+
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-weight: 600;
+
+    color: white;
+    background-color: var(--azulescuro-Ready);
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    transition: background-color 500ms ease ;
+}
+
+form button:hover {
+    background-color: #02289ae6;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #535252;
+}
+
+footer {
+    height: 500px;
+    background-color: #063F5F;
+}
+
+footer .container-grid {
+    height: 100% ;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.container-grid .card-footer {
+    height: 40%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.card- {
+    height: 30px;
+    width: 130px;
+    background-color: var(--azulclaro-Ready);
+    color: white;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+.icones {
+    width: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones svg {
+    width: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.patri {
+    margin-left: 12px;
+
+}
+
+.service {
+    margin-left: 24px ;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services a {
+    font-family: "Padauk";
+    font-size: 20px;
+    color: white;
+    text-decoration: underline transparent;
+
+}
+
+.redes {
+    margin-left: 35px;
+}
+
+
 
 
