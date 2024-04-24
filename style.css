@@ -47,6 +47,8 @@ header .container-grid .favicon {
     width: 192px;
     margin-left: -50px;
     margin-top: 0px;
+   
+
     
 }
 
@@ -395,14 +397,29 @@ footer .container-grid {
 }
 
 
-.container-grid .card-footer {
+.container-grid .responsi {
     height: 40%;
-    width: 100%;
+    width: 600px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+}
+
+.card-footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px
+
+}
+
+.card-footer img {
+
+    width: 30%;
 
 }
 
@@ -419,6 +436,21 @@ footer .container-grid {
     bottom: 30px;
 
 }
+
+.card3 {
+    height: 30px;
+    width: 130px;
+    background-color: var(--azulclaro-Ready);
+    color: white;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 30px;
+    
+
+}
+
 
 .icones {
     width: 100px;
@@ -446,6 +478,12 @@ footer .container-grid {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 200px;
+
+    position: relative;
+    right: 30px;
+    top: 30px
+
 }
 
 .services a {
@@ -456,9 +494,144 @@ footer .container-grid {
 
 }
 
+.services a:hover {
+    color: #3999CF;
+}
+
 .redes {
     margin-left: 35px;
 }
+
+@media screen and (max-width: 1300px) {
+    header{
+        position: relative;
+    }
+
+    .menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #000000e0;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+
+    }    
+}
+
+@media screen and (max-width: 1033px) {
+
+    
+   #portfólio img {
+    height: 40%;
+    width: 20%;
+   }
+
+   #portfólio a {
+    font-size: 30px;
+   }
+
+    
+}
+
+@media screen and (max-width: 800px) {
+    .container-grid img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    #Sobre {
+        margin-bottom: 100px;
+    }
+
+    #Sobre p {
+        width: 500px;
+        position: relative;
+        right: 35px;
+    }
+
+    .container-cards {
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .card-footer {
+        position: relative;
+        right: 50px;
+    }
+
+    .card {
+
+        flex-grow: 0;
+        flex-shrink: 0;
+
+    }
+
+    #Cases {
+
+        margin: 50px;
+
+    }
+
+    #portfólio {
+        height: 300px;
+    }
+
+    #portfólio a {
+        font-size: 22px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    #portfólio img {
+        height: 40%;
+    }
+
+    #formulario form {
+        width: 70%;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #Sobre {
+        position: relative;
+        right: 60px;
+    }
+
+    footer {
+        height: 900px;
+    }
+
+    
+
+    .container-grid .responsi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-footer {
+    }
+
+
+}
+
+
+
+
 
 
 
