@@ -122,7 +122,7 @@ header div.banner {
     text-align: center;
 
     padding-bottom: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #Cases h2 {
@@ -384,7 +384,7 @@ form textarea::placeholder {
 }
 
 footer {
-    height: 500px;
+    height: 850px;
     background-color: #063F5F;
 }
 
@@ -399,17 +399,17 @@ footer .container-grid {
 
 .container-grid .responsi {
     height: 40%;
-    width: 600px;
+    
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
 }
 
 .card-footer {
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,23 +418,26 @@ footer .container-grid {
 }
 
 .card-footer img {
+    margin-top: 40px;
 
-    width: 30%;
+    width: 70%;
+    margin-right: 20px;
 
 }
 
 
 .card- {
-    height: 30px;
-    width: 130px;
-    background-color: var(--azulclaro-Ready);
+   
+    width: 155px;
+    background-color: none;
     color: white;
     font-family: "Space Grotesk";
     font-size: 20px;
-    border-radius: 15px;
-    position: relative;
-    bottom: 30px;
+    margin-right: 60px;
 
+    
+    
+    
 }
 
 .card3 {
@@ -444,9 +447,10 @@ footer .container-grid {
     color: white;
     font-family: "Space Grotesk";
     font-size: 20px;
-    border-radius: 15px;
-    position: relative;
-    bottom: 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+    
+   
     
 
 }
@@ -457,6 +461,7 @@ footer .container-grid {
 
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
 }
 
 .icones svg {
@@ -465,24 +470,40 @@ footer .container-grid {
     margin-bottom: 30px;
 }
 
+.icones3 svg {
+    width: 50px;
+}
+
+
 .patri {
-    margin-left: 12px;
+    margin-left: 45px;
+    background-color: var(--azulclaro-Ready);
+    border-radius: 30px;
+    height: 30px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    
 
 }
 
 .service {
-    margin-left: 24px ;
+    margin-left:60px ;
+    background-color: #3999CF;
+    border-radius: 30px;
+    height:30px ;
 }
 
 .services {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
 
-    position: relative;
-    right: 30px;
-    top: 30px
+  
 
 }
 
@@ -495,17 +516,16 @@ footer .container-grid {
 }
 
 .services a:hover {
-    color: #3999CF;
+    color: #021859;
 }
+
 
 .redes {
     margin-left: 35px;
 }
 
 @media screen and (max-width: 1300px) {
-    header{
-        position: relative;
-    }
+    
 
     .menu {
         height: 500px;
@@ -518,10 +538,12 @@ footer .container-grid {
         align-items: center;
 
         background-color: #000000e0;
+        margin-top: 100px;
 
-        position: absolute;
-        top: 165px;
-        right: 0px;
+        position: relative;
+        left: 58px;
+
+        
 
     }    
 }
@@ -538,10 +560,15 @@ footer .container-grid {
     font-size: 30px;
    }
 
+   .container-cards {
+    overflow-x: auto;
+    gap: 20px;
+   }
+
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .container-grid img {
         width: 100px;
         height: 100px;
@@ -552,13 +579,14 @@ footer .container-grid {
     }
 
     #Sobre {
-        margin-bottom: 100px;
+        margin-bottom: 500px;
     }
 
     #Sobre p {
-        width: 500px;
+        width: 400px;
         position: relative;
         right: 35px;
+        font-size: 25px;
     }
 
     .container-cards {
@@ -566,10 +594,10 @@ footer .container-grid {
         gap: 20px;
     }
 
-    .card-footer {
-        position: relative;
-        right: 50px;
+    footer {
+        height: 850px;
     }
+
 
     .card {
 
@@ -590,8 +618,7 @@ footer .container-grid {
 
     #portfólio a {
         font-size: 22px;
-        position: relative;
-        bottom: 30px;
+       
     }
 
     #portfólio img {
@@ -602,32 +629,126 @@ footer .container-grid {
         width: 70%;
 
     }
+    
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .menu {
+        height: 400px;
+        width: 350px;
+       
+    }
+
+    #portfólio {
+        height: 250px;
+    }
+
+    #portfólio a {
+        font-size: 17px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    #portfólio img {
+        width: 100px;
+        position: relative;
+        bottom: 20px;
+    }
+  
+
+    
+
 
 }
 
 @media screen and (max-width: 600px) {
 
+    .menu {
+        width: 300px;
+        font-size: 17px;
+        position: relative;
+        left: 38px;
+    }
+
+
+    .menu a {
+        font-size: 20px;
+    }
+
     #Sobre {
         position: relative;
-        right: 60px;
+        right: 30px;
+        height: 300px;
+        
     }
 
-    footer {
-        height: 900px;
+    #Sobre .title {
+        font-size: 20px;
+        position: relative;
+        left: 30px;
+    }
+
+
+    #Sobre p  {
+        font-size: 18px;
+    }
+
+    #Cases {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .card-footer img {
+        position: relative;
+        left: 10px;
+    }
+
+    #portfólio img {
+        height: 120px;
+        position: relative;
+        bottom: 20px;
+    }
+    
+
+    #portfólio .filtro {
+        height: 300px;
+        width: 100%;
+        border-radius: 2px;
+        position: relative;
+        right: 3px;
+    }
+
+    #portfólio a {
+        font-size: 16px;
+    }
+
+
+    #formulario form {
+        width: 100%;    
     }
 
     
-
-    .container-grid .responsi {
-        display: flex;
-        flex-direction: column;
+    form button {
+        width: 50%;
     }
-
-    
-
 
 }
 
+@media screen and (max-width: 450px) {
+
+    #Sobre .title {
+        font-size: 18px;
+    }
+
+    #Sobre p{
+        font-size: 16px;
+        width: 300px;
+        position: relative;
+        left: 5px;
+    }
+}
 
 
 
