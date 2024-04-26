@@ -679,11 +679,6 @@ footer .container-grid {
         position: relative;
         bottom: 20px;
     }
-  
-
-    
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -757,6 +752,12 @@ footer .container-grid {
         width: 50%;
     }
 
+    .container-grid .responsi {
+        position: relative;
+        left: 15px;
+    }
+
+
 }
 
 @media screen and (max-width: 450px) {
@@ -790,11 +791,7 @@ footer .container-grid {
         
     }
 
-    .container-grid .responsi {
-        position: relative;
-        left: 15px;
-    }
-
+    
    
     
 }
