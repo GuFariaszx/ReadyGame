@@ -488,10 +488,12 @@ footer .container-grid {
 }
 
 .service {
-    margin-left:60px ;
+    margin-left:40px ;
     background-color: #3999CF;
     border-radius: 30px;
     height:30px ;
+    padding-left: 23px;
+    width: 130px;
 }
 
 .services {
@@ -537,7 +539,7 @@ footer .container-grid {
         justify-content: space-around;
         align-items: center;
 
-        background-color: #000000e0;
+        background-color: rgba(61, 61, 61, 0.61);
         margin-top: 100px;
 
         position: relative;
@@ -674,7 +676,7 @@ footer .container-grid {
 
 
     .menu a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #Sobre {
@@ -738,6 +740,11 @@ footer .container-grid {
 
 @media screen and (max-width: 450px) {
 
+    header .container-grid .favicon {
+        position: relative;
+        left: 20px;
+    } 
+
     #Sobre .title {
         font-size: 18px;
     }
@@ -746,8 +753,16 @@ footer .container-grid {
         font-size: 16px;
         width: 300px;
         position: relative;
-        left: 5px;
+        right: 20px;
     }
+
+    #portfólio img {
+        height: 100px;
+        width: 80px;
+        position: relative;
+        top: 20px;
+    }
+    
 }
 
 
