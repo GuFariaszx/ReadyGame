@@ -776,7 +776,7 @@ footer .container-grid {
     
 
     #portfólio .filtro {
-        height: 400px;
+        height: 300px;
         position: relative;
         left: 0px;
     }
@@ -788,6 +788,11 @@ footer .container-grid {
         top: 20px;
         
         
+    }
+
+    .container-grid .responsi {
+        position: relative;
+        left: 15px;
     }
 
    
