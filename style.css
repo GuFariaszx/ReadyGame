@@ -540,6 +540,19 @@ footer .container-grid {
     margin-left: 35px;
 }
 
+.menu-fechado {
+    display: none;
+}
+
+#botao svg { 
+    width: 80px;
+    background-color: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
 @media screen and (max-width: 1300px) {
     
 
@@ -558,10 +571,11 @@ footer .container-grid {
 
         position: relative;
         left: 58px;
+        z-index: 1;
 
-        
-
-    }    
+    }  
+    
+    
 }
 
 @media screen and (max-width: 1033px) {
