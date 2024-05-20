@@ -2,7 +2,7 @@
 
 let menu = document.getElementById("menu")
 let iconeBarras = document.getElementById("icone-barras")
-let iconeX = document.getElementById("#icone-x")
+let iconeX = document.getElementById("icone-x")
 
 function abrirFecharMenu() {
     if(menu.classList.contains("menu-fechado")) {

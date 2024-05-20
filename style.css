@@ -536,6 +536,7 @@ footer .container-grid {
 }
 
 
+
 .redes {
     margin-left: 35px;
 }
@@ -546,12 +547,19 @@ footer .container-grid {
 
 #botao svg { 
     width: 80px;
-    background-color: none;
+    height: 80px;
+}
+
+.banner #botao{
+    background-color: unset;
+    border: none;
+    display: none;
 }
 
 #icone-barras {
     display: none;
 }
+
 
 @media screen and (max-width: 1300px) {
     
@@ -573,7 +581,11 @@ footer .container-grid {
         left: 58px;
         z-index: 1;
 
-    }  
+    }   
+    
+    .banner #botao {
+        display: unset;
+    }
     
     
 }
@@ -594,8 +606,6 @@ footer .container-grid {
     overflow-x: auto;
     gap: 20px;
    }
-
-    
 }
 
 @media screen and (max-width: 900px) {
@@ -670,6 +680,8 @@ footer .container-grid {
     .menu {
         height: 400px;
         width: 350px;
+        position: relative;
+        top: 220px;
        
     }
 
